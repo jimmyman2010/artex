@@ -121,7 +121,14 @@ input:focus {
 }
 /* footer */
 .footer {
-
+    padding-bottom: 50px;
+}
+.back-to-top{
+    display: block;
+    width: 42px;
+    height: 42px;
+    background: url(../img/sprite.png) -168px 0 #fff;
+    margin: 50px auto 0;
 }
 
 /*------------------------------------*\
