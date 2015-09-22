@@ -43,12 +43,12 @@
 			<header class="header clear" role="banner">
 				<div class="container">
 					<!-- nav -->
-					<nav class="nav" role="navigation">
+					<!--nav class="nav" role="navigation">
 						<?php html5blank_nav(); ?>
-					</nav>
+					</nav-->
 					<!-- /nav -->
 				</div>
 			</header>
 			<!-- /header -->
-			<main role="main">
+			<main class="main" role="main">
 				<div class="container">

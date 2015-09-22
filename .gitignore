@@ -1,2 +1,4 @@
 /.idea
 /wordpress-4.3.zip
+/node_modules
+/.sass-cache
