@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'PalatinoLinotype-Regular';
+    src: url('../fonts/PalatinoLinotype-Regular.eot');
+    src: url('../fonts/PalatinoLinotype-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PalatinoLinotype-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PalatinoLinotype-Roman';
+    src: url('../fonts/PalatinoLinotype-Roman.woff') format('woff'),
+    url('../fonts/PalatinoLinotype-Roman.ttf') format('truetype'),
+    url('../fonts/PalatinoLinotype-Roman.svg#PalatinoLinotype-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$font-palatino: 'PalatinoLinotype-Roman', 'PalatinoLinotype-Regular', Georgia, serif;

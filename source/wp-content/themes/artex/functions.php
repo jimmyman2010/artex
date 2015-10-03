@@ -190,8 +190,8 @@ if (function_exists('register_sidebar'))
         'id' => 'widget-area-left',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
     ));
 
     // Define Sidebar Widget Area 2
@@ -201,8 +201,8 @@ if (function_exists('register_sidebar'))
         'id' => 'widget-area-right',
         'before_widget' => '<div id="%1$s" class="%2$s">',
         'after_widget' => '</div>',
-        'before_title' => '<h3>',
-        'after_title' => '</h3>'
+        'before_title' => '<h2>',
+        'after_title' => '</h2>'
     ));
 }
 

@@ -1,4 +1,5 @@
 @import "compass/reset";
+@import "fontface";
 
 /*------------------------------------*\
     MAIN
@@ -140,36 +141,8 @@ input:focus {
     position: relative;
 }
 
-/* sidebar */
-.sidebar {
-    width: 250px;
-    background-color: #202020;
-    color: #fff;
-    font-size: 16px;
-    position: absolute;
-    top: -60px;
-    z-index: 1120;
-    &.sidebar-left{
-        left: -250px;
-    }
-    &.sidebar-right{
-        right: -250px;
-    }
-    a {
-        color: #fff;
-        text-decoration: none;
-    }
-    .widget_recent_entries{
-        li{
-            border-bottom: 1px solid #646464;
-            padding: 10px 15px 10px 20px;
-            line-height: 20px;
-            &:first-child{
-                border-top: 1px solid #646464;
-            }
-        }
-    }
-}
+@import "form";
+@import "rail";
 
 /* footer */
 .footer {
@@ -195,17 +168,6 @@ input:focus {
 /*------------------------------------*\
 	TYPOGRAPHY
 \*------------------------------------*/
-
-@font-face {
-    font-family: 'Font-Name';
-    src: url('fonts/font-name.eot');
-    src: url('fonts/font-name.eot?#iefix') format('embedded-opentype'),
-    url('fonts/font-name.woff') format('woff'),
-    url('fonts/font-name.ttf') format('truetype'),
-    url('fonts/font-name.svg#font-name') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
 
 /*------------------------------------*\
     RESPONSIVE
