@@ -1,0 +1,10 @@
+@import "compass/css3";
+input, section{
+    @include border-radius(10px);
+    border: none;
+    background: #fff;
+    height: 37px;
+    line-height: 37px;
+    padding: 0 10px;
+    color: #333;
+}

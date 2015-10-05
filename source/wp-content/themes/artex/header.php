@@ -31,11 +31,11 @@
 		<div class="wrapper">
 			<nav class="navbar-main navbar navbar-fixed-top" role="navigation">
 				<div class="container">
-					<a class="left-menu" href="javascript:;"></a>
+					<a class="left-menu show-menu" data-target=".sidebar-left" href="javascript:;"></a>
 					<div class="navbar-copy">
 						<-&nbsp;GRAPHIC DESIGN AND ONLINE MARKETING CONSULTING | BLOG&nbsp;->
 					</div>
-					<a class="right-menu" href="javascript:;"></a>
+					<a class="right-menu show-menu" data-target=".sidebar-right" href="javascript:;"></a>
 				</div>
 				<!-- /.container -->
 			</nav>
