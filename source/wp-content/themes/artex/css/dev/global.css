@@ -242,7 +242,7 @@ input, section {
   top: 18px;
 }
 .sidebar.sidebar-right {
-  margin-left: 900px;
+  margin-left: 875px;
   padding-top: 50px;
 }
 .sidebar.sidebar-right .close-sidebar {
@@ -285,6 +285,9 @@ input, section {
 .sidebar-widget .my_widget_recent_entries li:first-child {
   border-top: 1px solid #646464;
 }
+.sidebar-widget .my_widget_recent_entries li a:hover {
+  text-decoration: underline;
+}
 .sidebar-widget .widget_categories li {
   padding: 12px 20px;
   border-bottom: 1px solid #646464;
@@ -297,7 +300,6 @@ input, section {
 }
 .sidebar-widget .widget_categories li a:hover {
   color: #fff;
-  text-decoration: underline;
 }
 .sidebar-widget .widget_search h2 {
   font-size: 30px;
@@ -324,6 +326,73 @@ input, section {
 }
 .sidebar-widget .widget_tag_cloud .tagcloud {
   padding: 0 20px;
+}
+.sidebar-widget .widget_tag_cloud .tagcloud a:hover {
+  text-decoration: underline;
+}
+
+.random-quotes {
+  text-align: center;
+  padding: 55px 0;
+}
+.random-quotes h3 {
+  font-family: "PalatinoLinotype-Roman", "PalatinoLinotype-Regular", Georgia, serif;
+  font-size: 34px;
+  line-height: 37px;
+}
+.random-quotes p {
+  font-family: Lato, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 15px;
+}
+.random-quotes a {
+  background: url(../img/sprite.png) no-repeat -62px -2px;
+  display: inline-block;
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  text-indent: -9999px;
+  margin: 10px 5px;
+}
+.random-quotes a.open-link {
+  background-position: -115px 0;
+}
+
+.random-post {
+  text-align: center;
+}
+.random-post h3 {
+  color: #000000;
+  font-family: Palatino, Palatino Linotype, Georgia, Times, Times New Roman, serif;
+  font-size: 24px;
+  line-height: 31px;
+  padding: 30px 0 15px;
+}
+.random-post h3 a {
+  text-decoration: none;
+}
+.random-post p {
+  font-family: lato, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.random-post p a {
+  background-color: #7F7F7F;
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  padding: 3px 25px;
+  border-radius: 10px;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.single-quotes .random-post {
+  border: 1px solid #ff0000;
+  padding: 0 30px;
 }
 
 /* footer */

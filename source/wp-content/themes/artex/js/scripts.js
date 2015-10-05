@@ -19,5 +19,13 @@
     $('.show-menu').on('click', function(){
         $($(this).data('target')).show();
     });
-	
+
+    $('.back-to-top').on('click', function(){
+        $("html, body").animate({scrollTop: 0}, 500);
+    });
+
+    $('.refresh').on('click', function(){
+        var href = window.location.href;
+        window.location.href = href;
+    });
 })(jQuery, this);
