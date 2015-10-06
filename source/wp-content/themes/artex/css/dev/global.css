@@ -453,6 +453,98 @@ input, section {
   font-family: lato,sans-serif;
 }
 
+.col-3 {
+  width: 33.3%;
+  float: left;
+  padding-left: 13px;
+  padding-right: 12px;
+}
+
+.col-6 {
+  width: 66.6%;
+  float: left;
+  padding-left: 13px;
+  padding-right: 12px;
+}
+
+.body-content {
+  font-family: lato, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 60px 0 10px;
+}
+.body-content > * {
+  margin-bottom: 15px;
+}
+.body-content h1 {
+  font-family: "PalatinoLinotype-Roman", "PalatinoLinotype-Regular", Georgia, serif;
+  font-size: 34px;
+  line-height: 37px;
+  margin-bottom: 25px;
+}
+.body-content h2 {
+  font-family: "PalatinoLinotype-Roman", "PalatinoLinotype-Regular", Georgia, serif;
+  font-size: 28px;
+  line-height: 31px;
+  margin-bottom: 20px;
+}
+.body-content h3 {
+  font-family: "PalatinoLinotype-Roman", "PalatinoLinotype-Regular", Georgia, serif;
+  font-size: 24px;
+  line-height: 27px;
+  margin-bottom: 15px;
+}
+.body-content h4 {
+  font-family: "PalatinoLinotype-Roman", "PalatinoLinotype-Regular", Georgia, serif;
+  font-size: 20px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.body-content h5 {
+  font-family: "PalatinoLinotype-Roman", "PalatinoLinotype-Regular", Georgia, serif;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 15px;
+}
+.body-content p {
+  margin-bottom: 15px;
+}
+.body-content p:empty {
+  display: none;
+}
+.body-content figure {
+  margin-top: 8px;
+}
+.body-content figure figcaption {
+  font-family: lato, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  padding: 5px 0 10px;
+}
+.body-content .button {
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 22px;
+  font-size: 18px;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  background-color: #7F7F7F;
+  padding: 8px 12px;
+  display: inline-block;
+  margin: 10px 0 20px;
+  cursor: pointer;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.body-content .button:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
 /* footer */
 .footer {
   padding-bottom: 50px;
