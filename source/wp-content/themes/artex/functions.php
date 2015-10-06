@@ -15,7 +15,7 @@
 	Theme Support
 \*------------------------------------*/
 
-const VERSION = '0.1.0';
+const VERSION = '0.1.1';
 
 if (!isset($content_width))
 {
@@ -125,6 +125,9 @@ function html5blank_styles()
 
     wp_register_style('bootstrap', get_template_directory_uri() . '/css/lib/bootstrap.min.css', array(), VERSION, 'all');
     wp_enqueue_style('bootstrap'); // Enqueue it!
+
+    wp_register_style('font-awesome', get_template_directory_uri() . '/css/lib/font-awesome.min.css', array(), VERSION, 'all');
+    wp_enqueue_style('font-awesome'); // Enqueue it!
 
     wp_register_style('bootstrap-theme', get_template_directory_uri() . '/css/lib/bootstrap-theme.min.css', array(), VERSION, 'all');
     wp_enqueue_style('bootstrap-theme'); // Enqueue it!
@@ -395,13 +398,6 @@ add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove
 // Remove Filters
 remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altogether
 
-// Shortcodes
-add_shortcode('html5_shortcode_demo', 'html5_shortcode_demo'); // You can place [html5_shortcode_demo] in Pages, Posts now.
-add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [html5_shortcode_demo_2] in Pages, Posts now.
-
-// Shortcodes above would be nested like this -
-// [html5_shortcode_demo] [html5_shortcode_demo_2] Here's the page title! [/html5_shortcode_demo_2] [/html5_shortcode_demo]
-
 /*------------------------------------*\
 	Custom Post Types
 \*------------------------------------*/
@@ -452,5 +448,6 @@ require_once "shortcodes/row.php";
 require_once "shortcodes/column.php";
 require_once "shortcodes/image.php";
 require_once "shortcodes/button.php";
+require_once "shortcodes/link.php";
 
 require_once "widgets/My_Recent_Posts.php";

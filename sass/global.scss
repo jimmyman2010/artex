@@ -1,4 +1,5 @@
 @import "compass/reset";
+@import "compass/css3";
 @import "fontface";
 
 /*------------------------------------*\
@@ -101,7 +102,7 @@ input:focus {
     width: 39px;
     height: 39px;
     background-color: #7f7f7f;
-    border-radius: 40px;
+    @include border-radius(40px);
     position: absolute;
     top: 10px;
     left: 12px;

@@ -16,11 +16,11 @@
         position: absolute;
     }
     &.sidebar-left{
-        margin-left: -125px;
+        margin-left: -150px;
         padding-top: 72px;
         .left-menu-inner{
             background-color: #DCDCDC;
-            border-radius: 60px;
+            @include border-radius(60px);
             left: 20px;
             display: block;
             width: 59px;
@@ -34,7 +34,7 @@
         }
     }
     &.sidebar-right{
-        margin-left: 875px;
+        margin-left: 900px;
         padding-top: 50px;
         .close-sidebar{
             left: 18px;

@@ -51,12 +51,12 @@
         font-size: 18px;
         display: inline-block;
         padding: 3px 25px;
-        border-radius: 10px;
         letter-spacing: 1px;
         margin: 30px;
         text-decoration: none;
         line-height: 22px;
         font-weight: 300;
+        @include border-radius(10px);
         &:hover{
             @include opacity(0.5);
         }
@@ -205,6 +205,38 @@
         @include border-radius(10px);
         &:hover{
             @include opacity(0.5);
+        }
+    }
+    .link{
+        display: inline-block;
+        margin-top: 15px;
+        &:hover{
+            text-decoration: underline;
+        }
+        i{
+            margin-right: 5px;
+            color: #000;
+        }
+    }
+    blockquote{
+        font-size: 20px;
+        line-height: 27px;
+        font-style: italic;
+        background-color: #F7F7F7;
+        color: #261700;
+        padding: 10px 20px;
+        margin: 20px 0 15px;
+        @include border-radius(20px);
+    }
+    a{
+        font-family: lato, sans-serif;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 24px;
+        text-align: left;
+        color: #7F7F7F;
+        &:hover{
+            color: #B9B8B8;
         }
     }
 }
