@@ -459,15 +459,8 @@ input, section {
   font-family: lato,sans-serif;
 }
 
-.col-3 {
-  width: 33.3%;
-  float: left;
-  padding-left: 13px;
-  padding-right: 12px;
-}
-
-.col-6 {
-  width: 66.6%;
+.col-3, .col-6 {
+  width: 100%;
   float: left;
   padding-left: 13px;
   padding-right: 12px;
@@ -667,6 +660,15 @@ input, section {
 /*------------------------------------*\
     RESPONSIVE
 \*------------------------------------*/
+@media only screen and (min-width: 768px) {
+  .col-3 {
+    width: 33.3%;
+  }
+
+  .col-6 {
+    width: 66.6%;
+  }
+}
 /*------------------------------------*\
     MISC
 \*------------------------------------*/
