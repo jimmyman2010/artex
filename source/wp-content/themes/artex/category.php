@@ -19,15 +19,21 @@
 
 	<div class="random-quotes">
 		<h3><?= $custom_fields['quotes'][0] ?></h3>
-		<?php if(!empty($custom_fields['source'][0])) { ?>
-		<a href="<?= $custom_fields['source'][0] ?>">
-			<?php } ?>
-			<p><?= $custom_fields['author'][0] ?></p>
+		<p>
 			<?php if(!empty($custom_fields['source'][0])) { ?>
-		</a>
-	<?php } ?>
-		<a href="javascript:void(0);" class="refresh">refresh</a>
-		<a href="<?= get_permalink($quotesList[$index]->ID) ?>" class="open-link">detail</a>
+				<a href="<?= $custom_fields['source'][0] ?>">
+			<?php } ?>
+				<?= $custom_fields['author'][0] ?>
+			<?php if(!empty($custom_fields['source'][0])) { ?>
+				</a>
+			<?php } ?>
+		</p>
+		<a href="javascript:void(0);" class="button refresh">refresh</a>
+		<a href="<?= get_permalink($quotesList[$index]->ID) ?>" class="button open-link">detail</a>
+	</div>
+
+	<div class="col-sm-12 list-title">
+		<h2><?php single_cat_title( '', true ); ?></h2>
 	</div>
 	<div class="blog-list row">
 		<?php get_template_part('loop'); ?>

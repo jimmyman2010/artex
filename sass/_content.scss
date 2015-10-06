@@ -1,6 +1,6 @@
 .random-quotes {
     text-align: center;
-    padding: 55px 0;
+    padding: 55px 0 40px;
     h3 {
         font-family: $font-palatino;
         font-size: 34px;
@@ -13,7 +13,7 @@
         line-height: 24px;
         padding: 15px;
     }
-    a{
+    .button{
         background: url(../img/sprite.png) no-repeat -62px -2px;
         display: inline-block;
         height: 35px;
@@ -30,7 +30,7 @@
     text-align: center;
     h3{
         color: #000000;
-        font-family: Palatino, Palatino Linotype, Georgia, Times, Times New Roman, serif;
+        font-family: $font-palatino;
         font-size: 24px;
         line-height: 31px;
         padding: 30px 0 15px;
@@ -43,15 +43,21 @@
         font-size: 18px;
         font-weight: 300;
         line-height: 24px;
-        a{
+        .view-article{
             background-color: #7F7F7F;
             color: #fff;
             font-size: 18px;
             display: inline-block;
             padding: 3px 25px;
             border-radius: 10px;
+            letter-spacing: 1px;
             margin: 30px;
             text-decoration: none;
+            line-height: 22px;
+            font-weight: 300;
+            &:hover{
+                @include opacity(0.5);
+            }
         }
     }
 }
@@ -61,8 +67,41 @@
     padding: 0 30px;
 }
 
+.list-title{
+    border-top: 1px solid #DCDCDC;
+    line-height: 26px;
+    text-align: center;
+    font-size: 20px;
+    font-family: $font-palatino;
+    h2{
+        padding: 10px 0 70px;
+    }
+}
+
 .blog-list{
-    .post:nth-child(2n+1) {
-        clear: left;
+    article {
+        &:nth-child(2n+1) {
+            clear: left;
+        }
+        h3{
+            font-size: 20px;
+            line-height: 22px;
+            font-family: $font-palatino;
+            margin: 15px 0 8px;
+            a{
+                text-decoration: none;
+            }
+        }
+        p{
+            font-size: 16px;
+            line-height: 22px;
+            font-family: lato, sans-serif;
+            font-weight: 300;
+            .view-article{
+                padding: 10px 0 30px;
+                display: inline-block;
+                text-decoration: none;
+            }
+        }
     }
 }
