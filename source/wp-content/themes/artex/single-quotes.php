@@ -23,6 +23,7 @@
     ]);
     $index = array_rand($postList, 1);
     setup_postdata( $postList[$index] );
+    global $post; $post = $postList[$index];
     ?>
     <div class="random-post">
         <h3><a href="<?= get_permalink($postList[$index]->ID) ?>">

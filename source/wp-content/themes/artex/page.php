@@ -7,9 +7,11 @@
 	<?php the_post(); ?>
 
 	<!-- article -->
-	<article id="post-<?php the_ID(); ?>" <?php post_class('body-content'); ?>>
+	<article id="post-<?php the_ID(); ?>" <?php post_class('single-page'); ?>>
 
-		<?php the_content(); // Dynamic Content ?>
+		<div class="body-content">
+			<?php the_content(); // Dynamic Content ?>
+		</div>
 
 	</article>
 	<!-- /article -->

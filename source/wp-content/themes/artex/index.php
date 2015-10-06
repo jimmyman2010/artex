@@ -37,6 +37,7 @@ $postList = get_posts([
 ]);
 $index = array_rand($postList, 1);
 setup_postdata( $postList[$index] );
+global $post; $post = $postList[$index];
 ?>
 <div class="random-post">
     <?= get_the_post_thumbnail($postList[$index]->ID, 'large') ?>

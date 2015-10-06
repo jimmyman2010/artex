@@ -257,7 +257,7 @@ input, section {
   color: #fff;
   text-decoration: none;
 }
-.sidebar .site-brief {
+.sidebar .widget_text {
   font-size: 14px;
   font-family: Lato, sans-serif;
   color: #B9B8B8;
@@ -473,12 +473,61 @@ input, section {
   padding-right: 12px;
 }
 
+.single-page {
+  padding: 60px 0 10px;
+}
+
+.information {
+  text-align: center;
+}
+.information img {
+  -moz-border-radius: 300px;
+  -webkit-border-radius: 300px;
+  border-radius: 300px;
+}
+.information h1 {
+  font-family: "PalatinoLinotype-Roman", "PalatinoLinotype-Regular", Georgia, serif;
+  font-size: 34px;
+  line-height: 37px;
+  text-align: center;
+  margin: 30px 0 15px;
+}
+.information .meta-info {
+  font-size: 14px;
+  line-height: 19px;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+}
+.information .meta-info li {
+  display: inline-block;
+  margin: 0 8px;
+}
+.information .meta-info li i {
+  margin-right: 5px;
+}
+.information .intro {
+  font-size: 22px;
+  line-height: 30px;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  padding: 15px 0;
+}
+.information.bottom .meta-info {
+  margin: 70px 0 10px;
+  border-top: 1px solid #DCDCDC;
+  padding-top: 10px;
+}
+.information ~ .body-content {
+  border-top: 1px solid #DCDCDC;
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
 .body-content {
   font-family: lato, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 24px;
-  padding: 60px 0 10px;
 }
 .body-content > * {
   margin-bottom: 15px;
@@ -583,6 +632,14 @@ input, section {
 }
 .body-content a:hover {
   color: #B9B8B8;
+}
+.body-content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+.body-content ol {
+  list-style: decimal;
+  padding-left: 20px;
 }
 
 /* footer */
