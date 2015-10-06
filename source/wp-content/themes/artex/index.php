@@ -44,6 +44,7 @@ setup_postdata( $postList[$index] );
         <?= get_the_title($postList[$index]->ID); ?>
     </a></h3>
     <p><?php the_excerpt(); ?></p>
+    <a class="view-article" href="<?= get_permalink($postList[$index]->ID) ?>"">Read more</a>
 </div>
 <?php
 wp_reset_postdata();

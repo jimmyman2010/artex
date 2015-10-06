@@ -24,7 +24,7 @@
         $("html, body").animate({scrollTop: 0}, 500);
     });
 
-    $('.refresh').on('click', function(){
+    $('.button.refresh').on('click', function(){
         var href = window.location.href;
         window.location.href = href;
     });

@@ -1,75 +1,46 @@
 <?php get_header(); ?>
 
-	<!-- section -->
-	<section>
+<?php get_sidebar('left'); ?>
 
-	<?php if (have_posts()): the_post(); ?>
+<div class="col-sm-6 col-sm-offset-1">
 
-		<h1><?php _e( 'Author Archives for ', 'html5blank' ); echo get_the_author(); ?></h1>
+	<?php
+	$quotesList = get_posts([
+		'posts_per_page' => 10000,
+		'post_type' => 'quotes'
+	]);
 
-	<?php if ( get_the_author_meta('description')) : ?>
+	$index = array_rand($quotesList, 1);
 
-	<?php echo get_avatar(get_the_author_meta('user_email')); ?>
+	$custom_fields = get_post_custom($quotesList[$index]->ID);
 
-		<h2><?php _e( 'About ', 'html5blank' ); echo get_the_author() ; ?></h2>
+	wp_reset_postdata();
+	?>
 
-		<?php echo wpautop( get_the_author_meta('description') ); ?>
+	<div class="random-quotes">
+		<h3><?= $custom_fields['quotes'][0] ?></h3>
+		<p>
+			<?php if(!empty($custom_fields['source'][0])) { ?>
+			<a href="<?= $custom_fields['source'][0] ?>">
+				<?php } ?>
+				<?= $custom_fields['author'][0] ?>
+				<?php if(!empty($custom_fields['source'][0])) { ?>
+			</a>
+		<?php } ?>
+		</p>
+		<a href="javascript:void(0);" class="button refresh">refresh</a>
+		<a href="<?= get_permalink($quotesList[$index]->ID) ?>" class="button open-link">detail</a>
+	</div>
 
-	<?php endif; ?>
-
-	<?php rewind_posts(); while (have_posts()) : the_post(); ?>
-
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(array(120,120)); // Declare pixel size you need inside the array ?>
-				</a>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
-
-			<!-- post title -->
-			<h2>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h2>
-			<!-- /Post title -->
-
-			<!-- post details -->
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-			<!-- /post details -->
-
-			<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
-
-			<br class="clear">
-
-			<?php edit_post_link(); ?>
-
-		</article>
-		<!-- /article -->
-
-	<?php endwhile; ?>
-
-	<?php else: ?>
-
-		<!-- article -->
-		<article>
-
-			<h2><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-		</article>
-		<!-- /article -->
-
-	<?php endif; ?>
-
-		<?php get_template_part('pagination'); ?>
-
-	</section>
-	<!-- /section -->
-
-<?php get_sidebar(); ?>
+	<div class="col-sm-12 list-title">
+		<h2><?php _e( 'Author: ', 'html5blank' ); echo get_the_author(); ?></h2>
+	</div>
+	<div class="blog-list row">
+		<?php rewind_posts(); ?>
+		<?php get_template_part('loop'); ?>
+	</div>
+	<?php get_template_part('pagination'); ?>
+</div>
+<?php get_sidebar('right'); ?>
 
 <?php get_footer(); ?>

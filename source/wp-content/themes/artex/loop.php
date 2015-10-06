@@ -18,6 +18,7 @@
 		<!-- /post title -->
 
 		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+		<a class="view-article" href="<?php the_permalink() ?>"">Read more</a>
 
 	</article>
 	<!-- /article -->

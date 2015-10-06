@@ -37,8 +37,8 @@
 		</div>
 		<div class="blog-list row">
 			<?php get_template_part('loop'); ?>
-			<?php get_template_part('pagination'); ?>
 		</div>
+		<?php get_template_part('pagination'); ?>
 	</div>
 <?php get_sidebar('right'); ?>
 

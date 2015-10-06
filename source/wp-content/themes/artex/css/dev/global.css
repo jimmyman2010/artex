@@ -379,7 +379,8 @@ input, section {
   font-weight: 300;
   line-height: 24px;
 }
-.random-post p .view-article {
+.random-post .view-article {
+  font-family: lato, sans-serif;
   background-color: #7F7F7F;
   color: #fff;
   font-size: 18px;
@@ -392,7 +393,7 @@ input, section {
   line-height: 22px;
   font-weight: 300;
 }
-.random-post p .view-article:hover {
+.random-post .view-article:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
   opacity: 0.5;
 }
@@ -431,10 +432,25 @@ input, section {
   font-family: lato, sans-serif;
   font-weight: 300;
 }
-.blog-list article p .view-article {
-  padding: 10px 0 30px;
+.blog-list article .view-article {
+  font-size: 16px;
+  line-height: 22px;
+  font-family: lato, sans-serif;
+  font-weight: 300;
+  margin: 10px 0 30px;
   display: inline-block;
-  text-decoration: none;
+}
+
+.pagination {
+  text-align: center;
+  display: block;
+}
+.pagination > * {
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: lato,sans-serif;
 }
 
 /* footer */
