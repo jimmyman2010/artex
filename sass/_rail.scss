@@ -1,13 +1,15 @@
 /* sidebar */
 .sidebar {
-    width: 250px;
+    width: 260px;
     background-color: #202020;
     color: #fff;
     font-size: 16px;
     position: fixed;
     top: 0;
     z-index: -1;
-    //display: none;
+    display: none;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
     .close-sidebar{
         background: url(../img/sprite.png) no-repeat -38px -48px;
         display: block;
@@ -67,10 +69,7 @@
         color: #B9B8B8;
         padding: 20px;
     }
-    .my_widget_recent_entries{
-        h2{
-            display: none;
-        }
+    .my_widget_recent_entries, .widget_nav_menu{
         li{
             border-bottom: 1px solid #646464;
             padding: 10px 15px 10px 20px;

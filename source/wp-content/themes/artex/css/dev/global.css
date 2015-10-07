@@ -210,13 +210,16 @@ input, section {
 
 /* sidebar */
 .sidebar {
-  width: 250px;
+  width: 260px;
   background-color: #202020;
   color: #fff;
   font-size: 16px;
   position: fixed;
   top: 0;
   z-index: -1;
+  display: none;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
 }
 .sidebar .close-sidebar {
   background: url(../img/sprite.png) no-repeat -38px -48px;
@@ -278,18 +281,15 @@ input, section {
   color: #B9B8B8;
   padding: 20px;
 }
-.sidebar-widget .my_widget_recent_entries h2 {
-  display: none;
-}
-.sidebar-widget .my_widget_recent_entries li {
+.sidebar-widget .my_widget_recent_entries li, .sidebar-widget .widget_nav_menu li {
   border-bottom: 1px solid #646464;
   padding: 10px 15px 10px 20px;
   line-height: 20px;
 }
-.sidebar-widget .my_widget_recent_entries li:first-child {
+.sidebar-widget .my_widget_recent_entries li:first-child, .sidebar-widget .widget_nav_menu li:first-child {
   border-top: 1px solid #646464;
 }
-.sidebar-widget .my_widget_recent_entries li a:hover {
+.sidebar-widget .my_widget_recent_entries li a:hover, .sidebar-widget .widget_nav_menu li a:hover {
   text-decoration: underline;
 }
 .sidebar-widget .widget_categories li {

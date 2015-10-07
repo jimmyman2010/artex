@@ -33,11 +33,11 @@
         var that = $(this);
         var widthWindow = $(window).width();
 
-        //$(that.data('target')).show();
+        $(that.data('target')).show();
         $('body').width(widthWindow).css('overflow-x', 'hidden');
-        var path = 250;
+        var path = 260;
         if(!that.hasClass('left-menu')) {
-            path = -250;
+            path = -260;
             $('.left-menu').fadeOut();
         }
         else {
