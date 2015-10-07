@@ -6,8 +6,8 @@
     font-size: 16px;
     position: fixed;
     top: 0;
-    z-index: 1120;
-    display: none;
+    z-index: -1;
+    //display: none;
     .close-sidebar{
         background: url(../img/sprite.png) no-repeat -38px -48px;
         display: block;
@@ -16,7 +16,7 @@
         position: absolute;
     }
     &.sidebar-left{
-        margin-left: -150px;
+        left: 0;
         padding-top: 72px;
         .left-menu-inner{
             background-color: #DCDCDC;
@@ -34,7 +34,7 @@
         }
     }
     &.sidebar-right{
-        margin-left: 900px;
+        right: 0;
         padding-top: 50px;
         .close-sidebar{
             left: 18px;

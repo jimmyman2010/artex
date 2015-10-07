@@ -136,6 +136,7 @@ input:focus {
 /* wrapper */
 .wrapper {
   padding-top: 60px;
+  background-color: #fff;
 }
 
 /* header */
@@ -215,8 +216,7 @@ input, section {
   font-size: 16px;
   position: fixed;
   top: 0;
-  z-index: 1120;
-  display: none;
+  z-index: -1;
 }
 .sidebar .close-sidebar {
   background: url(../img/sprite.png) no-repeat -38px -48px;
@@ -226,7 +226,7 @@ input, section {
   position: absolute;
 }
 .sidebar.sidebar-left {
-  margin-left: -150px;
+  left: 0;
   padding-top: 72px;
 }
 .sidebar.sidebar-left .left-menu-inner {
@@ -246,7 +246,7 @@ input, section {
   top: 18px;
 }
 .sidebar.sidebar-right {
-  margin-left: 900px;
+  right: 0;
   padding-top: 50px;
 }
 .sidebar.sidebar-right .close-sidebar {

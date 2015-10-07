@@ -27,6 +27,8 @@
 	</head>
 	<body <?php body_class(); ?>>
 
+	<?php get_sidebar('right'); ?>
+	<?php get_sidebar('left'); ?>
 		<!-- wrapper -->
 		<div class="wrapper">
 			<nav class="navbar-main navbar navbar-fixed-top" role="navigation">

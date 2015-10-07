@@ -1,6 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_sidebar('left'); ?>
 
 <div class="col-sm-6 col-sm-offset-1">
 
@@ -51,6 +50,5 @@ global $post; $post = $postList[$index];
 wp_reset_postdata();
 ?>
 </div>
-<?php get_sidebar('right'); ?>
 
 <?php get_footer(); ?>
