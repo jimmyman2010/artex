@@ -68,7 +68,13 @@
     });
 
     $('.button.refresh').on('click', function(){
-        var href = window.location.href;
-        window.location.href = href;
+        if($(this).hasClass('manual')) {
+            //use link href
+        }
+        else {
+            var href = window.location.href;
+            href = href.replace('#', '');
+            window.location.href = href;
+        }
     });
 })(jQuery, this);

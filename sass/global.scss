@@ -96,27 +96,32 @@ input:focus {
     font-size: 16px;
     font-weight: 300;
     color: #7f7f7f;
+    display: none;
+}
+
+.left-menu-contain, .right-menu-contain{
+    float: left;
+    width: 50%;
+    text-align: center;
+    padding: 10px 0 8px;
+}
+.left-menu-contain{
+    border-right: 1px solid #dcdcdc;
 }
 
 .left-menu {
-    display: block;
+    display: inline-block;
     width: 39px;
     height: 39px;
     background-color: #7f7f7f;
     @include border-radius(40px);
-    position: absolute;
-    top: 10px;
-    left: 12px;
 }
 
 .right-menu {
-    display: block;
+    display: inline-block;
     width: 39px;
     height: 39px;
     background: url(../img/sprite.png) -3px 1px #fff;
-    position: absolute;
-    top: 10px;
-    right: 12px;
 }
 
 /* logo */
@@ -189,16 +194,52 @@ input:focus {
 }
 
 @media only screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
     .col-3{
         width: 33.3%;
     }
     .col-6 {
         width: 66.6%;
     }
+    .navbar-copy{
+        display: block;
+    }
+
+    .left-menu-contain, .right-menu-contain{
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0;
+    }
+    .left-menu-contain{
+        border-right: none;
+    }
+
+    .left-menu {
+        display: block;
+        background-color: #7f7f7f;
+        @include border-radius(40px);
+        position: absolute;
+        top: 10px;
+        left: 12px;
+    }
+
+    .right-menu {
+        display: block;
+        background: url(../img/sprite.png) -3px 1px #fff;
+        position: absolute;
+        top: 10px;
+        right: 12px;
+    }
+
 }
 
 @media only screen and (min-width: 1024px) {
-
+    .container {
+        width: 1025px;
+    }
 }
 
 @media only screen and (min-width: 1140px) {
@@ -206,7 +247,9 @@ input:focus {
 }
 
 @media only screen and (min-width: 1280px) {
-
+    .container {
+        width: 1200px;
+    }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),

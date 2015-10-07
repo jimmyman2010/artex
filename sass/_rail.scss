@@ -47,15 +47,6 @@
         color: #fff;
         text-decoration: none;
     }
-    .widget_text{
-        font-size: 14px;
-        font-family: Lato, sans-serif;
-        color: #B9B8B8;
-        font-weight: 300;
-        padding: 20px;
-        line-height: 22px;
-        margin-bottom: 8px;
-    }
     .copyright{
         font: 14px/20px Lato, sans-serif;
         color: #B9B8B8;
@@ -63,11 +54,26 @@
     }
 }
 .sidebar-widget {
+    > div{
+        margin-top: 25px;
+    }
     h2{
         font-size: 18px;
         font-family: $font-palatino;
         color: #B9B8B8;
         padding: 20px;
+    }
+    .widget_text {
+        .textwidget
+        {
+            font-size: 14px;
+            font-family: Lato, sans-serif;
+            color: #B9B8B8;
+            font-weight: 300;
+            padding: 0 20px;
+            line-height: 22px;
+            margin-bottom: 8px;
+        }
     }
     .my_widget_recent_entries, .widget_nav_menu{
         li{
@@ -104,13 +110,13 @@
         .search {
             position: relative;
             input[type="search"] {
-                width: 207px;
+                width: 200px;
                 margin-left: 22px;
                 padding: 0 33px 0 10px;
             }
             button{
                 position: absolute;
-                right: 34px;
+                right: 30px;
                 text-indent: -9999px;
                 overflow: hidden;
                 top: 8px;

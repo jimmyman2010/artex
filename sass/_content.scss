@@ -130,6 +130,9 @@
 
 .single-page{
     padding: 60px 0 10px;
+    &.page{
+        padding-top: 30px;
+    }
 }
 .information{
     text-align: center;
@@ -183,6 +186,9 @@
     line-height: 24px;
     > * {
         margin-bottom: 15px;
+    }
+    h1, h2, h3, h4, h5{
+        margin-top: 10px;
     }
     h1{
         font-family: $font-palatino;
@@ -291,4 +297,11 @@
 }
 .page-not-found{
     min-height: 600px;
+}
+.featured-image{
+    text-align: center;
+    img{
+        width: 100%;
+        height: auto;
+    }
 }

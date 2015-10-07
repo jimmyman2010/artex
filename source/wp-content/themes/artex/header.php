@@ -33,23 +33,29 @@
 		<div class="wrapper">
 			<nav class="navbar-main navbar navbar-fixed-top" role="navigation">
 				<div class="container">
-					<a class="left-menu show-menu" data-target=".sidebar-left" href="javascript:;"></a>
+					<div class="left-menu-contain">
+						<a class="left-menu show-menu" data-target=".sidebar-left" href="javascript:;"></a>
+					</div>
 					<div class="navbar-copy">
 						<-&nbsp;GRAPHIC DESIGN AND ONLINE MARKETING CONSULTING | BLOG&nbsp;->
 					</div>
-					<a class="right-menu show-menu" data-target=".sidebar-right" href="javascript:;"></a>
+					<div class="right-menu-contain">
+						<a class="right-menu show-menu" data-target=".sidebar-right" href="javascript:;"></a>
+					</div>
 				</div>
 				<!-- /.container -->
 			</nav>
 			<!-- header -->
 			<header class="header clear" role="banner">
-				<div class="container">
-					<!-- nav -->
-					<!--nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
-					</nav-->
-					<!-- /nav -->
-				</div>
+				<?php if(get_post_type() == 'page') { ?>
+				<!-- post thumbnail -->
+				<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+						<div class="featured-image">
+					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+						</div>
+				<?php endif; ?>
+				<!-- /post thumbnail -->
+				<?php } ?>
 			</header>
 			<!-- /header -->
 			<main class="main" role="main">

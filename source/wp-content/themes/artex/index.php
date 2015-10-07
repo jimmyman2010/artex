@@ -19,7 +19,7 @@ wp_reset_postdata();
     <h3><?= $custom_fields['quotes'][0] ?></h3>
     <p>
         <?php if(!empty($custom_fields['source'][0])) { ?>
-            <a href="<?= $custom_fields['source'][0] ?>">
+            <a href="<?= $custom_fields['source'][0] ?>" <?php if($custom_fields['source'][0] !== '#') { ?>target="_blank"<?php } ?>>
         <?php } ?>
             <?= $custom_fields['author'][0] ?>
         <?php if(!empty($custom_fields['source'][0])) { ?>
