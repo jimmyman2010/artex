@@ -1,12 +1,10 @@
 <?php get_header(); ?>
 
-<?php get_sidebar('left'); ?>
-
 <div class="col-sm-6 col-sm-offset-1">
 
 	<?php
 	$quotesList = get_posts([
-		'posts_per_page' => 10000,
+		'posts_per_page' => -1,
 		'post_type' => 'quotes'
 	]);
 
@@ -41,6 +39,5 @@
 	</div>
 	<?php get_template_part('pagination'); ?>
 </div>
-<?php get_sidebar('right'); ?>
 
 <?php get_footer(); ?>

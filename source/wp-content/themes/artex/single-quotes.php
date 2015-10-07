@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_sidebar('left'); ?>
-
 <div class="col-sm-6 col-sm-offset-1">
 
     <?php $custom_fields = get_post_custom(get_the_ID()); ?>
@@ -19,7 +17,7 @@
     </div>
     <?php
     $postList = get_posts([
-        'posts_per_page' => 10000
+        'posts_per_page' => -1
     ]);
     $index = array_rand($postList, 1);
     setup_postdata( $postList[$index] );
@@ -36,6 +34,5 @@
     wp_reset_postdata();
     ?>
 </div>
-<?php get_sidebar('right'); ?>
 
 <?php get_footer(); ?>

@@ -1,11 +1,10 @@
 <?php get_header(); ?>
 
-
 <div class="col-sm-6 col-sm-offset-1">
 
 <?php
 $quotesList = get_posts([
-    'posts_per_page' => 10000,
+    'posts_per_page' => -1,
     'post_type' => 'quotes'
 ]);
 
@@ -32,7 +31,7 @@ wp_reset_postdata();
 </div>
 <?php
 $postList = get_posts([
-    'posts_per_page' => 10000
+    'posts_per_page' => -1
 ]);
 $index = array_rand($postList, 1);
 setup_postdata( $postList[$index] );

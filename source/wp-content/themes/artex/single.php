@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_sidebar('left'); ?>
-
 <div class="col-sm-6 col-sm-offset-1">
 
 	<?php the_post(); ?>
@@ -66,6 +64,5 @@
 	<!-- /article -->
 
 </div>
-<?php get_sidebar('right'); ?>
 
 <?php get_footer(); ?>

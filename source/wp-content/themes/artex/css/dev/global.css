@@ -635,6 +635,10 @@ input, section {
   padding-left: 20px;
 }
 
+.page-not-found {
+  min-height: 600px;
+}
+
 /* footer */
 .footer {
   padding-bottom: 50px;
