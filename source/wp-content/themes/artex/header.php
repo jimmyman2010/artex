@@ -32,18 +32,15 @@
 		<!-- wrapper -->
 		<div class="wrapper">
 			<nav class="navbar-main navbar navbar-fixed-top" role="navigation">
-				<div class="container">
-					<div class="left-menu-contain">
-						<a class="left-menu show-menu" data-target=".sidebar-left" href="javascript:;"></a>
-					</div>
-					<div class="navbar-copy">
-						<-&nbsp;GRAPHIC DESIGN AND ONLINE MARKETING CONSULTING | BLOG&nbsp;->
-					</div>
-					<div class="right-menu-contain">
-						<a class="right-menu show-menu" data-target=".sidebar-right" href="javascript:;"></a>
-					</div>
+				<div class="left-menu-contain">
+					<a class="left-menu show-menu" data-target=".sidebar-left" href="javascript:;"></a>
 				</div>
-				<!-- /.container -->
+				<div class="navbar-copy">
+					<-&nbsp;GRAPHIC DESIGN AND ONLINE MARKETING CONSULTING | BLOG&nbsp;->
+				</div>
+				<div class="right-menu-contain">
+					<a class="right-menu show-menu" data-target=".sidebar-right" href="javascript:;"></a>
+				</div>
 			</nav>
 			<!-- header -->
 			<header class="header clear" role="banner">

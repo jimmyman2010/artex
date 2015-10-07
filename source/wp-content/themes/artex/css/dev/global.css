@@ -723,7 +723,7 @@ input, section {
     border-radius: 40px;
     position: absolute;
     top: 10px;
-    left: 12px;
+    left: 15px;
   }
 
   .right-menu {
@@ -731,17 +731,12 @@ input, section {
     background: url(../img/sprite.png) -3px 1px #fff;
     position: absolute;
     top: 10px;
-    right: 12px;
+    right: 15px;
   }
 }
 @media only screen and (min-width: 1024px) {
   .container {
     width: 1025px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .container {
-    width: 1200px;
   }
 }
 /*------------------------------------*\
