@@ -15,7 +15,7 @@
 	Theme Support
 \*------------------------------------*/
 
-const VERSION = '0.2.1.5';
+const VERSION = '0.3.0';
 
 if (!isset($content_width))
 {
