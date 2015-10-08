@@ -1,6 +1,14 @@
 (function ($, root, undefined) {
     $(window).on('load resize', function(){
-        var heightWindow = $(window).height();
+        var heightWindow = document.documentElement.clientHeight;
+        var widthWindow = document.documentElement.clientWidth;
+        var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+        if(iOS) {
+            var zoomLevel = document.documentElement.clientWidth / window.innerWidth;
+            heightWindow = window.innerHeight * zoomLevel;
+            widthWindow = window.innerWidth * zoomLevel;
+        }
+        $('.siteWrapper').width(widthWindow).css('overflow-x', 'hidden');
         $('.sidebar-left').height(heightWindow - 72);
         $('.sidebar-right').height(heightWindow - 50);
         $('.wrapper').css({'min-height': heightWindow + 'px'});
@@ -32,8 +40,6 @@
 
     function openSidebar(button, sidebar) {
         sidebar.addClass('open').show();
-        var widthWindow = $(window).width();
-        $('body').width(widthWindow).css('overflow-x', 'hidden');
         var path = 260;
         if(!button.hasClass('left-menu')) {
             path = -260;
@@ -53,7 +59,7 @@
         $('.wrapper').css({'transform': 'translate(0)'});
         setTimeout(function(){
             $('.wrapper').removeAttr('style');
-            $('body').removeAttr('style');
+            $('.siteWrapper').removeAttr('style');
             sidebar.removeAttr('style');
 
             $(window).trigger('resize');

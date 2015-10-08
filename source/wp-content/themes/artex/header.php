@@ -26,34 +26,34 @@
 
 	</head>
 	<body <?php body_class(); ?>>
-
-	<?php get_sidebar('right'); ?>
-	<?php get_sidebar('left'); ?>
-		<!-- wrapper -->
-		<div class="wrapper">
-			<nav class="navbar-main navbar navbar-fixed-top" role="navigation">
-				<div class="left-menu-contain">
-					<a class="left-menu show-menu" data-target=".sidebar-left" href="javascript:;"></a>
-				</div>
-				<div class="navbar-copy">
-					<-&nbsp;GRAPHIC DESIGN AND ONLINE MARKETING CONSULTING | BLOG&nbsp;->
-				</div>
-				<div class="right-menu-contain">
-					<a class="right-menu show-menu" data-target=".sidebar-right" href="javascript:;"></a>
-				</div>
-			</nav>
-			<!-- header -->
-			<header class="header clear" role="banner">
-				<?php if(get_post_type() == 'page') { ?>
-				<!-- post thumbnail -->
-				<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-						<div class="featured-image">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-						</div>
-				<?php endif; ?>
-				<!-- /post thumbnail -->
-				<?php } ?>
-			</header>
-			<!-- /header -->
-			<main class="main" role="main">
-				<div class="container">
+		<div class="siteWrapper">
+		<?php get_sidebar('right'); ?>
+		<?php get_sidebar('left'); ?>
+			<!-- wrapper -->
+			<div class="wrapper">
+				<nav class="navbar-main navbar navbar-fixed-top" role="navigation">
+					<div class="left-menu-contain">
+						<a class="left-menu show-menu" data-target=".sidebar-left" href="javascript:;"></a>
+					</div>
+					<div class="navbar-copy">
+						<-&nbsp;GRAPHIC DESIGN AND ONLINE MARKETING CONSULTING | BLOG&nbsp;->
+					</div>
+					<div class="right-menu-contain">
+						<a class="right-menu show-menu" data-target=".sidebar-right" href="javascript:;"></a>
+					</div>
+				</nav>
+				<!-- header -->
+				<header class="header clear" role="banner">
+					<?php if(get_post_type() == 'page') { ?>
+					<!-- post thumbnail -->
+					<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
+							<div class="featured-image">
+						<?php the_post_thumbnail(); // Fullsize image for the single post ?>
+							</div>
+					<?php endif; ?>
+					<!-- /post thumbnail -->
+					<?php } ?>
+				</header>
+				<!-- /header -->
+				<main class="main" role="main">
+					<div class="container">

@@ -1,20 +1,20 @@
-				</div>
-			</main>
-			<!-- footer -->
-			<footer class="footer" role="contentinfo">
-				<div class="container">
-					<!-- back to top -->
-                    <a class="back-to-top" href="javascript:;"></a>
-					<!-- /back to top -->
-				</div>
-			</footer>
-			<!-- /footer -->
+					</div>
+				</main>
+				<!-- footer -->
+				<footer class="footer" role="contentinfo">
+					<div class="container">
+						<!-- back to top -->
+						<a class="back-to-top" href="javascript:;"></a>
+						<!-- /back to top -->
+					</div>
+				</footer>
+				<!-- /footer -->
 
-		</div>
-		<!-- /wrapper -->
+			</div>
+			<!-- /wrapper -->
 
-		<?php wp_footer(); ?>
-
+			<?php wp_footer(); ?>
+					</div>
 		<!-- analytics -->
 		<script>
 		(function(f,i,r,e,s,h,l){i['GoogleAnalyticsObject']=s;f[s]=f[s]||function(){

@@ -321,7 +321,7 @@ input, section {
   position: relative;
 }
 .sidebar-widget .widget_search .search input[type="search"] {
-  width: 200px;
+  width: 210px;
   margin-left: 22px;
   padding: 0 33px 0 10px;
 }
